@@ -7,7 +7,7 @@ const Mongo_URL = process.env.Mongo_URL;
 mongoose.connect(Mongo_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true, //   use this option only for hosting 
+    createIndexes: true, // Use this option for hosting
 })
     .then(() => {
         console.log('Connected to MongoDB');
