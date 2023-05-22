@@ -24,7 +24,4 @@ const userSchema = new Schema({
 
 const newuser = new mongoose.model('newuser', userSchema)
 
-// Define indexes using the `indexes` property
-userSchema.index({ field1: 1, field2: -1 });
-
 module.exports  = { newuser }
