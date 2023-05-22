@@ -3,11 +3,13 @@ require('dotenv').config();
 
 const Mongo_URL = process.env.Mongo_URL;
 
+
+
 // mongoose.connect("mongodb://127.0.0.1:27017/portfolioMessages")
 mongoose.connect(Mongo_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    createIndexes: true, // Use this option for hosting
+    // createIndexes: true, // Use this option for hosting
 })
     .then(() => {
         console.log('Connected to MongoDB');
