@@ -212,6 +212,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const navButton = document.querySelector('.nav-button');
     const closeLists = document.querySelector('.close-lists');
     const sections = document.querySelectorAll('section');
+    const chat = document.querySelector('.chat')
 
     // Smooth scroll to the target section
     const smoothScroll = (target) => {
@@ -235,6 +236,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = event.target.getAttribute('href').replace('#', '');
+        smoothScroll(target);
+    });
+
+    chat.addEventListener('click', (event) => {
         event.preventDefault();
         const target = event.target.getAttribute('href').replace('#', '');
         smoothScroll(target);

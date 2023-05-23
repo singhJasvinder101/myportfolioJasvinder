@@ -38,9 +38,47 @@
     }
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+#proj {
+    color: black;
+}
+
+#proj:hover {
+    color: white;
+}
+
+/* for 470px */
+@media screen and (max-width: 468px) {
+    .project-img img {
+        width: 100%;
+        height: 14rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 526px) {
+    .project-img img {
+        width: 90%;
+        height: 14rem;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 868px) and (max-width: 1200px) {
+    .project-items{
+        justify-content: space-around;
+    }
+}
+
+
 /* For 768 px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
 
 
     body {
@@ -66,9 +104,15 @@
         display: none;
     }
 
+
     .required {
         display: flex;
         flex-direction: column;
+    }
+
+    .navbar {
+        width: 85vw;
+        margin: auto;
     }
 
     .nav-button {
@@ -101,7 +145,7 @@
 
 
     .logo {
-        font-size: 1.3rem !important;
+        font-size: 1.4rem !important;
         font-family: 'Pacifico', cursive;
     }
 
@@ -136,7 +180,7 @@
         height: 9rem;
     }
 
-    li:nth-child(1){
+    li:nth-child(1) {
         display: none;
     }
 
@@ -348,21 +392,22 @@
         color: white;
     }
 
-    .section-container{
+    .section-container {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .skills-left{
+
+    .skills-left {
         width: 100% !important;
     }
-    .skills-right{
+
+    .skills-right {
         margin-top: 3rem;
         width: 100% !important;
         justify-content: space-between !important;
     }
 
-    #proj-desc{
+    #proj-desc {
         font-size: 1rem !important;
     }
 
@@ -419,9 +464,9 @@
     }
 
     .project-img img {
-        width: 100%;
-        width: 100%;
         height: 14rem;
+        display: block;
+        margin: 0 auto;
     }
 
     .project-img {
@@ -530,15 +575,16 @@
         width: auto;
         height: auto;
         cursor: pointer;
-        margin: 0.5rem;
+        margin: 0 0.3rem;
         color: rgb(135, 206, 235);
-        /* font-size: 18px !important; */
+        font-size: 22px !important;
     }
-    .footer-icons{
+
+    .footer-icons {
         width: auto;
     }
 
-    .footer h6{
+    .footer h6 {
         font-size: 1rem;
         width: auto;
     }
@@ -546,7 +592,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
     header {
         width: 95vw;
         margin: auto;
@@ -561,13 +607,13 @@
     .logo {
         font-size: 1.5rem;
         font-family: 'Pacifico', cursive;
-        padding-left: 0.5rem;
+        /* padding-left: 0.5rem; */
         color: rgb(135, 206, 235);
     }
 
     .required {
         display: flex;
-        width: 65vw;
+        width: 63vw;
         justify-content: space-between;
     }
 
@@ -581,11 +627,12 @@
 
     .links {
         display: flex;
+        gap: 1.2rem;
     }
 
-    .links li {
+    /* .links li {
         margin-left: 1.2rem;
-    }
+    } */
 
     .links li a {
         color: rgb(135, 206, 235);
@@ -594,6 +641,12 @@
     .chat {
         padding: 3px 8px;
         margin-left: 3px;
+    }
+
+    .active-nav {
+        height: 3px;
+        background: rgb(135, 206, 235);
+        border-radius: 1rem;
     }
 
 
@@ -615,6 +668,14 @@
     .hero-content {
         width: 50vw;
         color: white;
+    }
+
+    .hero-content h4 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
     }
 
     .hero-img {
@@ -785,7 +846,8 @@
         background-color: black;
         color: white;
     }
-    .section-container{
+
+    .section-container {
         display: flex;
     }
 
@@ -849,7 +911,7 @@
 
     .project-img {
         margin: 2rem 1.3rem;
-        width: 30%;
+        /* width: 30%; */
     }
 
     .project-items {
@@ -937,7 +999,7 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
-        height: 8rem;
+        height: 6rem;
         align-items: center;
         background-color: black;
         color: white;
@@ -945,6 +1007,7 @@
 
     .footer-content h2 {
         font-family: 'Pacifico', cursive;
+        font-size: 1.6rem;
         color: rgb(135, 206, 235);
     }
 
