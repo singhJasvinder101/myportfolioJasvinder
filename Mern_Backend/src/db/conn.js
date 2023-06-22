@@ -1,21 +1,16 @@
-const mongoose = require('mongoose');
-require('dotenv').config();
+require("dotenv").config()
+const mongoose = require("mongoose")
 
-const Mongo_URL = process.env.Mongo_URL;
+console.log('Mongo_URL:' + process.env.MONGO_URL);
 
+// Mongo_URL = "mongodb://127.0.0.1:27017/portfolioMessages"
+const connectDB = async ()=>{
+    try {
+        await mongoose.connect(process.env.MONGO_URL)
+        console.log("MongoDB connected")
+    } catch (error) {
+        console.log({error: error.message})
+    }
+}
+module.exports = connectDB
 
-
-// mongoose.connect("mongodb://127.0.0.1:27017/portfolioMessages")
-mongoose.connect(Mongo_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    // useCreateIndex: true,   // Use this option for hosting
-})
-    .then(() => {
-        console.log('Connected to MongoDB');
-    })
-    .catch((err) => {
-        console.error('Error connecting to MongoDB:', err.message);
-    });
-
-console.log('Mongo_URL:', process.env.Mongo_URL);

@@ -297,7 +297,7 @@ a:hover {
     }
 
     .about-me-left-content {
-        width: 70%;
+        width: 80%;
     }
 
 
@@ -581,7 +581,8 @@ a:hover {
     }
 
     .footer-icons {
-        width: auto;
+        width: 9rem;
+        padding-left: 2rem;
     }
 
     .footer h6 {
@@ -752,6 +753,7 @@ a:hover {
 
     .about-me-left-content {
         width: 70%;
+        text-align: justify;
     }
 
 
@@ -909,8 +911,9 @@ a:hover {
         height: 14rem;
     }
 
-    .project-img {
+    .project-img img{
         margin: 2rem 1.3rem;
+        cursor: pointer;
         /* width: 30%; */
     }
 
@@ -999,6 +1002,7 @@ a:hover {
         display: flex;
         width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
         height: 6rem;
         align-items: center;
         background-color: black;

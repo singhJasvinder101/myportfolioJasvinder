@@ -4,7 +4,7 @@ function initializeAnimations() {
     console.log("loaded")
 
     animateHeroContent()
-    animateBorders()
+    // animateBorders()
     animateContact()
     animateImages()
     animateSkillsSection()

@@ -6,7 +6,9 @@ const hbs = require('hbs')
 const validator = require('validator')
 
 
-require('./db/conn')
+const connectDB = require('./db/conn')
+connectDB()
+
 const { newuser } = require('./models/users')
 require('dotenv').config();
 
